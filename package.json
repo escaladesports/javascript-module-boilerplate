@@ -18,11 +18,11 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --hot --open --open-page \"/dev\"",
     "analyze": "cross-env ANALYZE=1 webpack -p",
     "build": "run-p build:es5 build:es6",
     "build:es6": "cross-env BABEL_ENV=es6 babel ./src --out-dir ./dist-es6",
     "build:es5": "cross-env BABEL_ENV=es5 babel ./src --out-dir ./dist-es5",
+    "dev": "webpack-dev-server --hot --open --open-page \"/dev\"",
     "prepublishOnly": "postinstall-build dist"
   },
   "devDependencies": {

@@ -14,5 +14,4 @@ Also make sure to edit the `package.json` file with a new name, version number, 
 
 ## Usage
 
-- `yarn dev`: Runs a local dev server from the `dev` directory
 - `yarn analyze`: View bundle sizes
