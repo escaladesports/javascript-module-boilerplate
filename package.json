@@ -22,7 +22,7 @@
     "build": "run-p build:es5 build:es6",
     "build:es6": "cross-env BABEL_ENV=es6 babel ./src --out-dir ./dist-es6",
     "build:es5": "cross-env BABEL_ENV=es5 babel ./src --out-dir ./dist-es5",
-    "prepublishOnly": "postinstall-build dist"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
