@@ -1,3 +1,10 @@
 export default function(){
-	console.log('Test!')
+	const def = {
+		test: '123'
+	}
+	const obj = {
+		anotherTest: 'abc',
+		...def
+	}
+	console.log(obj)
 }
