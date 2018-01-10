@@ -6,5 +6,5 @@ export default function(){
 		anotherTest: 'abc',
 		...def
 	}
-	console.log(obj)
+	return obj
 }

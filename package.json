@@ -22,7 +22,8 @@
     "build": "run-p build:es5 build:es6",
     "build:es6": "cross-env BABEL_ENV=es6 babel ./src --out-dir ./dist-es6",
     "build:es5": "cross-env BABEL_ENV=es5 babel ./src --out-dir ./dist-es5",
-    "prepublishOnly": "npm run build"
+	 "prepublishOnly": "npm run build",
+	 "test": "BABEL_ENV=es5 mocha --require babel-core/register"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -38,5 +39,8 @@
     "webpack": "^3.8.1",
     "webpack-bundle-analyzer": "^2.9.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
+  }
 }
