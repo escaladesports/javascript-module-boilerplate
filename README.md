@@ -14,4 +14,9 @@ Also make sure to edit the `package.json` file with a new name, version number, 
 
 ## Usage
 
+- `yarn test`: Run mocha tests
 - `yarn analyze`: View bundle sizes
+
+# Unit Testing
+
+Unit tests will be performed pre-commit and pre-publish. You can change this in the npm scripts if this doesn't work well with your use case.
