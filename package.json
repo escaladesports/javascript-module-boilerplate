@@ -20,11 +20,11 @@
   "scripts": {
     "analyze": "cross-env ANALYZE=1 webpack -p",
     "build": "rollup -c --environment BUILD:production",
-    "build:dev": "cross-env NODE_ENV=production BABEL_ENV=es5 webpack -p && cp dev/index.html dist-dev/index.html",
+    "build:dev": "cross-env NODE_ENV=production webpack -p && cp dev/index.html dist-dev/index.html",
     "dev": "webpack-dev-server --hot --open --open-page \"/dev\"",
     "prepublishOnly": "npm run test && npm run build",
     "serve": "cd dist-dev && static-server --open",
-    "test": "cross-env BABEL_ENV=es5 mocha --require babel-core/register"
+    "test": "mocha --require babel-core/register"
   },
   "pre-commit": [
     "test"
