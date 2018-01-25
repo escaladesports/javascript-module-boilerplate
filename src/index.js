@@ -7,7 +7,7 @@ export default function(){
 	}
 	const obj = {
 		anotherTest: 'abc',
-		...def
+		...def,
 	}
 	return obj
 }

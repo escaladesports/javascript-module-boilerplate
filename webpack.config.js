@@ -10,12 +10,12 @@ if (process.env.ANALYZE) {
 	}))
 }
 else if (process.env.NODE_ENV !== 'production'){
-	plugins.push(new webpack.HotModuleReplacementPlugin())
+	//plugins.push(new webpack.HotModuleReplacementPlugin())
 }
 
 if(process.env.NODE_ENV === 'production'){
-	console.log('PRODUCTION')
 	plugins.push(
+		/*
 		new webpack.optimize.ModuleConcatenationPlugin(),
 		new webpack.optimize.OccurrenceOrderPlugin(),
 		new webpack.LoaderOptionsPlugin({
@@ -26,28 +26,26 @@ if(process.env.NODE_ENV === 'production'){
 			beautify: false
 		}),
 		new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') } }),
+		*/
 	)
 
 }
 
 module.exports = {
-	devtool: 'eval',
 	entry: [
-		'./dev/dev.js'
+		'./src/index.js'
 	],
 	output: {
-		path: path.join(__dirname, 'dist-dev'),
+		path: path.join(__dirname, 'dist-umd'),
 		filename: 'index.js',
-		publicPath: '/dev/'
 	},
 	plugins: plugins,
 	resolve: {
-		extensions: ['.js', '.jsx']
+		extensions: ['.js', '.json']
 	},
 	module: {
 		rules: [{
 			test: /\.js?$/,
-			exclude: /node_modules/,
 			use: [{
 				loader: 'babel-loader'
 			}],

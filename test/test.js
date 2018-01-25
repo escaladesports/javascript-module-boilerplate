@@ -1,5 +1,7 @@
 import { expect } from 'chai'
-import theModule from '../src'
+const theModule = require('../dist-es5')
+
+console.log('MODULE:', theModule)
 
 describe('Default module', () => {
 	it('Should have content', () => {
