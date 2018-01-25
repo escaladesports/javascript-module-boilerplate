@@ -2,6 +2,7 @@ import babel from 'rollup-plugin-babel'
 import babelrc from 'babelrc-rollup'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
+import camel from 'camelcase'
 
 let pkg = require('./package.json')
 
@@ -32,7 +33,7 @@ let plugins = [
 export default {
 	entry: 'src/index.js',
 	plugins: plugins,
-	moduleName: 'rollupStarterProject',
+	moduleName: camel(pkg.name),
 	sourceMap: true,
 	targets: [
 		{
