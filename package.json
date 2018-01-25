@@ -7,10 +7,10 @@
     "module",
     "boilerplate"
   ],
-  "main": "dist-es5/index.js",
-  "browser": "dist-es5/index.js",
-  "module": "dist-es6/index.js",
-  "jsnext:main": "dist-es6/index.js",
+  "main": "dist/index.js",
+  "browser": "dist/index.js",
+  "module": "dist/index.mjs",
+  "jsnext:main": "dist/index.mjs",
   "author": "Kennedy Rose <krose@escaladesports.com>",
   "repository": {
     "type": "git",
@@ -19,12 +19,8 @@
   "license": "MIT",
   "scripts": {
     "analyze": "cross-env ANALYZE=1 webpack -p",
-    "build": "npm run rollup",
+    "build": "rollup -c --environment BUILD:production",
     "build:dev": "cross-env NODE_ENV=production BABEL_ENV=es5 webpack -p && cp dev/index.html dist-dev/index.html",
-    "build:es6": "cross-env BABEL_ENV=es6 babel ./src --out-dir ./dist-es6",
-    "build:es5": "cross-env BABEL_ENV=es5 babel ./src --out-dir ./dist-es5",
-    "build:umd": "cross-env BABEL_ENV=umd NODE_ENV=production webpack",
-    "rollup": "rollup -c --environment BUILD:production",
     "dev": "webpack-dev-server --hot --open --open-page \"/dev\"",
     "prepublishOnly": "npm run test && npm run build",
     "serve": "cd dist-dev && static-server --open",
@@ -55,8 +51,6 @@
     "rollup": "^0.55.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.2.6",
-    "rollup-plugin-istanbul": "^2.0.0",
-    "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-node-resolve": "^3.0.2",
     "static-server": "escaladesports/static-server",
     "umd": "^3.0.1",
@@ -64,6 +58,7 @@
     "webpack-bundle-analyzer": "^2.9.1"
   },
   "dependencies": {
-    "babel-plugin-external-helpers": "^6.22.0"
+    "babel-plugin-external-helpers": "^6.22.0",
+    "lodash": "^4.17.4"
   }
 }

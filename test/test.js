@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-const theModule = require('../dist-es5')
+const theModule = require('../dist/index')
 
 console.log('MODULE:', theModule)
 

@@ -13,30 +13,12 @@ else if (process.env.NODE_ENV !== 'production'){
 	//plugins.push(new webpack.HotModuleReplacementPlugin())
 }
 
-if(process.env.NODE_ENV === 'production'){
-	plugins.push(
-		/*
-		new webpack.optimize.ModuleConcatenationPlugin(),
-		new webpack.optimize.OccurrenceOrderPlugin(),
-		new webpack.LoaderOptionsPlugin({
-			minimize: true,
-			debug: false,
-		}),
-		new webpack.optimize.UglifyJsPlugin({
-			beautify: false
-		}),
-		new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') } }),
-		*/
-	)
-
-}
-
 module.exports = {
 	entry: [
 		'./src/index.js'
 	],
 	output: {
-		path: path.join(__dirname, 'dist-umd'),
+		path: path.join(__dirname, 'dist-webpack'),
 		filename: 'index.js',
 	},
 	plugins: plugins,

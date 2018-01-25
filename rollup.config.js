@@ -2,7 +2,6 @@ import babel from 'rollup-plugin-babel'
 import babelrc from 'babelrc-rollup'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
-import json from 'rollup-plugin-json'
 
 let pkg = require('./package.json')
 
@@ -19,7 +18,6 @@ rc.presets.forEach((preset, i) => {
 })
 
 let plugins = [
-	babel(rc),
 	nodeResolve({
 		jsnext: true,
 		main: true,
@@ -28,6 +26,7 @@ let plugins = [
 	commonjs({
 		include: "node_modules/**",
 	}),
+	babel(rc),
 ]
 
 export default {
