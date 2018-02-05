@@ -1,6 +1,6 @@
 {
   "name": "javascript-module-boilerplate",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "keywords": [
     "javascript",
     "node",
@@ -22,8 +22,8 @@
     "build:browser": "esca-scripts build --input './src/index.js' --output './dist-browser/index.js' --component --browser --name EscaEcomm",
     "dev": "esca-scripts dev ---input './dev/dev.js, ./dev/index.html' --browser",
     "open:github": "opn https://github.com/escaladesports/javascript-module-boilerplate",
-	 "prepublishOnly": "npm run build",
-	 "reset": "esca-scripts reset",
+    "prepublishOnly": "npm run build",
+    "reset": "esca-scripts reset",
     "test": "esca-scripts test"
   },
   "devDependencies": {
