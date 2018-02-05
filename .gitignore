@@ -11,14 +11,22 @@ node_modules/
 
 # Development/Environment
 .env
+.env.*
 dist
 .next
 json
-static
-docs/build/
-dist-*
-coverage/
-.eslintcache
+public
+.cache
+envdotjs-key
+env.js
+.serverless
+dist-es6
+dist-browser
+dist-es5
+dist-modules
+_optimize
+.babelrc
+.postcssrc
 
 # Temporary
 temp
