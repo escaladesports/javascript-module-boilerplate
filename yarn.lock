@@ -1454,6 +1454,10 @@ clone@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.3.tgz#298d7e2231660f40c003c2ed3140decf3f53085f"
 
+clone@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.1.tgz#d217d1e961118e3ac9a4b8bba3285553bf647cdb"
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -2296,9 +2300,9 @@ es6-weak-map@^2.0.1:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-esca-scripts@^0.10.3:
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/esca-scripts/-/esca-scripts-0.10.3.tgz#b8c8c74dc6ca174305482f347d8bde13fee46aea"
+esca-scripts@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/esca-scripts/-/esca-scripts-0.12.0.tgz#a5732b17ab761e6d93fc783e0ed40c743d624ab0"
   dependencies:
     babel-cli "^6.26.0"
     babel-core "^6.26.0"
@@ -2316,6 +2320,7 @@ esca-scripts@^0.10.3:
     babel-regenerator-runtime "^6.5.0"
     chai "^4.1.2"
     child-process-promise "^2.2.1"
+    clone "^2.1.1"
     commander "^2.13.0"
     cross-env "^5.1.1"
     css-mqpacker "^6.0.2"
@@ -5922,7 +5927,7 @@ static-extend@^0.1.1:
     define-property "^0.2.5"
     object-copy "^0.1.0"
 
-static-server@escaladesports/static-server:
+"static-server@github:escaladesports/static-server":
   version "3.0.0"
   resolved "https://codeload.github.com/escaladesports/static-server/tar.gz/0ef140cc5af48cba5249575df2bce1a6ca702f6f"
   dependencies:
