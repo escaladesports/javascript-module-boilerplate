@@ -7,13 +7,16 @@ A simple JavaScript boilerplate that outputs to ES5 and ES6.
 ```bash
 git clone git@github.com:escaladesports/javascript-module-boilerplate.git --depth=1 your-module
 cd your-module
-rm -rf .git
+yarn
+yarn reset
 ```
 
 Also make sure to edit the `package.json` file with a new name, version number, author, and anything else you might need.
 
 ## Usage
 
+- `yarn build`: Build browser and node versions of the module
+- `yarn dev`: Run live dev mode
 - `yarn test`: Run mocha tests
 - `yarn analyze`: View bundle sizes
 
