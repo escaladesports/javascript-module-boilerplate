@@ -21,10 +21,10 @@
     "build:main": "esca-scripts build --input './src/index.js' --output './dist/index.js' --babel --component",
     "build:browser": "esca-scripts build --input './src/index.js' --output './dist-browser/index.js' --component --browser --minify --name moduleBoilerplate",
     "dev": "esca-scripts dev ---input './dev/dev.js, ./dev/index.html' --browser",
-    "open:github": "opn https://github.com/escaladesports/javascript-module-boilerplate",
     "prepublishOnly": "npm run build",
     "reset": "esca-scripts reset",
-    "test": "esca-scripts test"
+    "test": "esca-scripts test",
+    "travis": "opn https://travis-ci.org/escaladesports/javascript-module-boilerplate/branches"
   },
   "devDependencies": {
     "esca-scripts": "^0.13.1",
