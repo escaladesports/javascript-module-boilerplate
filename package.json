@@ -18,7 +18,7 @@
   "scripts": {
     "analyze": "esca-scripts analyze --input './src/inject.js' --browser",
     "build": "run-p build:main build:browser",
-    "build:main": "esca-scripts build --input 'src --output dist --babel --multiple",
+    "build:main": "esca-scripts build --input src --output dist --babel --multiple",
     "build:browser": "esca-scripts build --input './src/index.js' --output './dist-browser/index.js' --component --browser --minify --name moduleBoilerplate",
     "dev": "esca-scripts dev ---input './dev/dev.js, ./dev/index.html' --browser",
     "prepublishOnly": "npm run build",
