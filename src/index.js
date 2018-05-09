@@ -1,7 +1,4 @@
-
-console.log('Module loaded')
-
-export default function(){
+function TestModule() {
 	const def = {
 		test: '123'
 	}
@@ -11,3 +8,5 @@ export default function(){
 	}
 	return obj
 }
+
+export default TestModule

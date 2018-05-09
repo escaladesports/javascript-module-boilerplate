@@ -20,10 +20,7 @@ public
 envdotjs-key
 env.js
 .serverless
-dist-es6
-dist-browser
-dist-es5
-dist-modules
+dist-*
 _optimize
 .babelrc
 .postcssrc

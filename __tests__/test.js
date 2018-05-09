@@ -1,9 +1,8 @@
-import { expect } from 'chai'
-import theModule from '../src'
+import theModule from '../dist'
 
 describe('Default module', () => {
 	it('Should have content', () => {
 		const testVar = theModule()
-		expect(testVar).to.not.be.empty
+		expect(testVar).toBeDefined()
 	})
 })
