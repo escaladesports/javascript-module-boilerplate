@@ -24,7 +24,7 @@
     "travis": "opn https://travis-ci.org/escaladesports/javascript-module-boilerplate/branches"
   },
   "devDependencies": {
-    "esca-scripts": "^1.2.1",
+    "esca-scripts": "^1.3.1",
     "opn-cli": "^3.1.0"
   },
   "dependencies": {
