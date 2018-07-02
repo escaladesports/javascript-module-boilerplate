@@ -20,6 +20,7 @@
     "dev": "esca-scripts dev --no-react --no-css",
     "prepublishOnly": "npm run build",
     "reset": "esca-scripts reset",
+    "start": "esca-scripts run --no-react --no-css",
     "test": "npm run build && esca-scripts test --no-react --no-css",
     "travis": "opn https://travis-ci.org/escaladesports/javascript-module-boilerplate/branches"
   },
